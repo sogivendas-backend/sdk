@@ -19,7 +19,7 @@
 			}
 		},
 		"publish": {
-			"command": "node tools/scripts/publish.mjs sdk 0.1.4 Latest",
+			"command": "node tools/scripts/publish.mjs sdk 0.2.0 Latest",
 			"dependsOn": ["build"]
 		},
 		"lint": {

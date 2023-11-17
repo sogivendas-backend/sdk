@@ -17,8 +17,8 @@
 // export * from '../../libs/shared/src/lib/types/text-search.type';
 // export * from '../../libs/shared/src/lib/types/findby.type';
 // export * from '../../libs/shared/src/lib/utils/string.utils';
-export * from '../../libs/common/pessoas/src/lib/domain/value-objects';
-export * from '../../libs/common/pessoas/src/lib/types/cnpj.type';
+export * from '../../libs/common/pessoas/src/lib/domain';
+export * from '../../libs/common/pessoas/src/lib/types';
 // export * from '../../libs/shared/src/lib/errors/controller.error';
 // export * from '../../libs/shared/src/lib/errors/dto.error';
 // export * from '../../libs/shared/src/lib/errors/repo.error';

@@ -1,6 +1,6 @@
 {
 	"name": "@sogivendas-backend/sdk",
-	"version": "0.1.4",
+	"version": "0.2.0",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sogivendas-backend/sdk.git"
@@ -24,8 +24,7 @@
 		"registry": "https://npm.pkg.github.com"
 	},	
 	"dependencies": {
-		"tslib": "^2.3.0",
-    "@sogivendas-backend/shared": "*"
+		"tslib": "^2.3.0"
 	},
 	"files": [
 
