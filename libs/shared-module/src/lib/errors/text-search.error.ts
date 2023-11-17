@@ -1,1 +1,0 @@
-export * from "../../../../../../shared/src/lib/errors/text-search.error"

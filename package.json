@@ -1,6 +1,7 @@
 {
-	"name": "@sogivendas-backend/sdk",
-	"version": "0.2.0",
+	"workspaces": [
+		"packages/*"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sogivendas-backend/sdk.git"
@@ -8,12 +9,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-
 	"description": "A simple npm package to demonstrate GitHub Package Registry",
-	"type": "commonjs",
-	"main": "./sdk/src/index",
-	"typings": "./sdk/src/index.d.ts",
-
 	"author": "Sogitec",
 	"license": "ISC",
 	"bugs": {
@@ -22,18 +18,14 @@
 	"homepage": "https://github.com/sogivendas-backend/sdk#readme",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
-	},	
-	"dependencies": {
-		"tslib": "^2.3.0"
 	},
-	"files": [
-
-
-		"libs/common/",
-		"sdk/"
-
-		
-	
-		
-		  ]
+	"devDependencies":{
+		"@types/lodash": "^4.14.198",
+		"@types/node": "~18.7.1",
+		"prettier": "^2.6.2",
+		"ts-jest": "^29.1.0",
+		"ts-node": "10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "5.2.2"
+	}
 }
