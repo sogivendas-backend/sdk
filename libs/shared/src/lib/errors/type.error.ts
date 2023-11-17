@@ -1,0 +1,1 @@
+export * from "../../../../../../libs/shared/src/lib/errors/type.error"

@@ -1,0 +1,39 @@
+{
+	"name": "shared-module",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "sdk/libs/shared/src",
+	"projectType": "library",
+	"targets": {
+		"build": {
+			"executor": "@nx/js:tsc",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"rootDir": "./",
+				"outputPath": "dist/sdk/libs/shared-module",
+				"tsConfig": "sdk/libs/shared/tsconfig.lib.json",
+				"packageJson": "sdk/libs/shared/package.json",
+				"main": "sdk/libs/shared/src/index.ts",
+				"assets": ["sdk/libs/shared/*.md"]
+			}
+		},
+		"publish": {
+			"command": "node tools/scripts/publish.mjs shared-module {args.ver} {args.tag}",
+			"dependsOn": ["build"]
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["sdk/libs/shared/**/*.ts", "sdk/libs/shared/package.json"]
+			}
+		},
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "sdk/libs/shared/jest.config.ts"
+			}
+		}
+	},
+	"tags": []
+}
