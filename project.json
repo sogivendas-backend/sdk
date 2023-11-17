@@ -8,15 +8,18 @@
 			"executor": "@nx/js:tsc",
 			"outputs": ["{options.outputPath}"],
 			"options": {
+				"rootDir": "./",
 				"outputPath": "dist/sdk",
 				"tsConfig": "sdk/tsconfig.lib.json",
 				"packageJson": "sdk/package.json",
-				"main": "sdk/src/index.ts",
-				"assets": ["sdk/*.md"]
+				"main": "sdk/sdk/src/index.ts",
+				"assets": ["sdk/*.md"],
+				"batch": true,
+				"clean": true
 			}
 		},
 		"publish": {
-			"command": "node tools/scripts/publish.mjs sdk {args.ver} {args.tag}",
+			"command": "node tools/scripts/publish.mjs sdk 0.1.4 Latest",
 			"dependsOn": ["build"]
 		},
 		"lint": {
