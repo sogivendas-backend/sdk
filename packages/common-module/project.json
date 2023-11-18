@@ -19,7 +19,7 @@
 			}
 		},
 		"publish": {
-			"command": "node tools/scripts/publish.mjs common-module 0.0.2 {args.tag}",
+			"command": "node tools/scripts/publish.mjs common-module 0.0.3 {args.tag}",
 			"dependsOn": ["build"]
 		},
 		"lint": {

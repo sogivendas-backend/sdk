@@ -1,7 +1,7 @@
 {
 	"extends": "../../../../tsconfig.base.json",
 	"compilerOptions": {
-		"rootDir": "../../../../",
+
 		"noEmit": false,
 		"declaration": true,
 		"allowUnreachableCode": false,
@@ -22,13 +22,10 @@
 		"strict": true,
 		"target": "esnext",
 		"outDir": "./dist",
-		"baseUrl": "../../../../",
-		"paths": {
-			"@sogivendas-backend/shared": ["libs/shared/src/lib/index.ts"],
-
-		  }
+	
+	
 	},
-
+	"include": ["src"],
 	"exclude": ["node_modules", "**/*.spec.ts"],
 	"references": [
 		{

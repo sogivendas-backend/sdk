@@ -5,20 +5,9 @@
 		"declaration": true,
 		"composite": false
 	},
-	"files": [
-		"../../../../libs/common/pessoas/src/lib/index.ts",
-		"../../../common/pessoas/src/lib/domain/value-objects/cnpj.valueobject.ts",
-		"../../../common/pessoas/src/lib/domain/value-objects/index.ts",
-		"../../../common/pessoas/src/lib/domain/value-objects/cpf-cnpj.valueobject.ts",
-		"../../../common/pessoas/src/lib/domain/value-objects/cpf-cnpj-documento.ts",
-		"../../../common/pessoas/src/lib/domain/index.ts",
-		"../../../common/pessoas/src/lib/types/cnpj.type.ts",
-		"../../../common/pessoas/src/lib/types/index.ts",
-		"../../../common/pessoas/src/lib/domain/pessoa-tipo.ts",
-	],
-	"include": [
-		"libs/common/*"
-	],
+
+	
+	"include": ["src"],
 	"exclude": [
 		"jest.config.ts"
 	]
