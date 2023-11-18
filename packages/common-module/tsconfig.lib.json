@@ -1,0 +1,14 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"strictNullChecks": false,
+		"declaration": true,
+		"composite": false
+	},
+
+	
+	"include": ["src"],
+	"exclude": [
+		"jest.config.ts"
+	]
+}

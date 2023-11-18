@@ -1,0 +1,50 @@
+{
+	"extends": "./tsconfig.json",
+
+	"compilerOptions": {
+		"declaration": true,
+		"composite": true
+	},
+	"files": [
+		"../../../shared/src/lib/errors/index.ts",
+		"../../../shared/src/lib/errors/security.error.ts",
+		"../../../shared/src/lib/errors/domain.error.ts",
+		"../../../shared/src/lib/errors/use-case.error.ts",
+		"../../../shared/src/lib/errors/controller.error.ts",
+		"../../../shared/src/lib/errors/search.error.ts",
+		"../../../shared/src/lib/errors/layer.error.ts",
+		"../../../shared/src/lib/errors/type.error.ts",
+		"../../../shared/src/lib/errors/dto.error.ts",
+		"../../../shared/src/lib/errors/app.error.dto.ts",
+		"../../../shared/src/lib/errors/app.error.log.ts",
+		"../../../shared/src/lib/errors/error.props.ts",
+		"../../../shared/src/lib/errors/text-search.error.ts",
+		"../../../shared/src/lib/errors/repo.error.ts",
+		"../../../shared/src/lib/errors/repo-static.error.ts",
+		"../../../shared/src/lib/errors/service.error.ts",
+		"../../../shared/src/lib/errors/external-service.error.ts",
+		"../../../shared/src/lib/errors/app.error.ts",
+		"../../../shared/src/lib/domain/value-objects/index.ts",
+		"../../../shared/src/lib/domain/value-objects/valueobject.ts",
+		"../../../shared/src/lib/result/index.ts",
+		"../../../shared/src/lib/result/result.ts",
+		"../../../shared/src/lib/types/index.ts",
+		"../../../shared/src/lib/types/id.type.ts",
+		"../../../shared/src/lib/types/null.type.ts",
+		"../../../shared/src/lib/types/findby.type.ts",
+		"../../../shared/src/lib/types/context.type.ts",
+		"../../../shared/src/lib/types/search.type.ts",
+		"../../../shared/src/lib/utils/string.utils.ts",
+		"../../../shared/src/lib/utils/index.ts",
+		"../../../shared/src/lib/types/text-search.type.ts",
+		"../../../shared/src/lib/domain/entities/index.ts",
+		"../../../shared/src/lib/domain/entities/entity.ts",
+		"../../../shared/src/lib/index.ts",
+		"./src/lib/base-shared.ts"
+	],
+	"include": ["src"],
+	"exclude": [
+		"jest.config.ts"
+	
+	]
+}

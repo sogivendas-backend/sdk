@@ -1,0 +1,1 @@
+export * from "../../../../../../../common/pessoas/src/lib/domain/pessoa-tipo"
