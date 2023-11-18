@@ -1,5 +1,6 @@
 {
 	"name": "@sogivendas-backend/sdk",
+	"version": "0.0.1",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sogivendas-backend/sdk.git"
