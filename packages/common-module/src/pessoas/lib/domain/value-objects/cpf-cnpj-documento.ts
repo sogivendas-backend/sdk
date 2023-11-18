@@ -1,1 +1,0 @@
-export * from "../../../../../../../../common/pessoas/src/lib/domain/value-objects/cpf-cnpj-documento"

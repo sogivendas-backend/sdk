@@ -5,6 +5,7 @@
 		"type": "git",
 		"url": "git+https://github.com/sogivendas-backend/sdk.git"
 	  },
+	  "main": "index.js",
 	  "scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	  },
