@@ -6,7 +6,7 @@
 		"composite": false
 	},
 	"files": [
-		"./src/index.ts",
+		
 		"../../../../libs/common/pessoas/src/lib/index.ts",
 		"../../../common/pessoas/src/lib/domain/value-objects/cnpj.valueobject.ts",
 		"../../../common/pessoas/src/lib/domain/value-objects/index.ts",
@@ -18,7 +18,7 @@
 		"../../../common/pessoas/src/lib/domain/pessoa-tipo.ts",
 	],
 	"include": [
-		"src",
+ 
 		"libs/common/*"
 	],
 	"exclude": [

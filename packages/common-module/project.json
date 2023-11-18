@@ -13,11 +13,13 @@
 				"tsConfig": "libs/sdk/packages/common-module/tsconfig.lib.json",
 				"packageJson": "libs/sdk/packages/common-module/package.json",
 				"main": "libs/sdk/packages/common-module/libs/commom/pessoas/src/lib/index.ts",
-				"assets": ["libs/sdk/packages/common-module/*.md"]
+				"assets": ["libs/sdk/packages/common-module/*.md"],
+				"batch": true,
+				"clean": true
 			}
 		},
 		"publish": {
-			"command": "node tools/scripts/publish.mjs common-module 0.0.1 {args.tag}",
+			"command": "node tools/scripts/publish.mjs common-module 0.0.2 {args.tag}",
 			"dependsOn": ["build"]
 		},
 		"lint": {
