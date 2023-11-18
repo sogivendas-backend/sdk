@@ -9,15 +9,15 @@
 			"outputs": ["{options.outputPath}"],
 			"options": {
 				"rootDir": "./",
-				"outputPath": "./dist",
+				"outputPath": "./dist/shared",
 				"tsConfig": "libs/sdk/packages/base-shared/tsconfig.lib.json",
 				"packageJson": "libs/sdk/packages/base-shared/package.json",
-				"main": "libs/sdk/packages/base-shared/libs/shared/src/lib/index.ts",
+				"main": "libs/sdk/packages/base-shared/libs/sdk/packages/base-shared/src/index.ts",
 				"assets": ["libs/sdk/packages/base-shared/*.md"]
 			}
 		},
 		"publish": {
-			"command": "node tools/scripts/publish.mjs base-shared 0.0.2 {args.tag}",
+			"command": "node tools/scripts/publish.mjs base-shared 0.0.1 {args.tag}",
 			"dependsOn": ["build"]
 		},
 		"lint": {

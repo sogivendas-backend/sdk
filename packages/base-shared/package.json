@@ -9,7 +9,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"tslib": "^2.3.0"
+		"tslib": "^2.3.0",
+		"mongoose": "7.6.1"
 	},
 	"description": "A simple npm package to demonstrate GitHub Package Registry",
 	"author": "Sogitec",
@@ -21,6 +22,12 @@
 	  "publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	  },
-	  "main": "./libs/shared/src/lib/index.js",
-	  "typings": "./libs/shared/src/lib/index.d.ts"
+	  "main":  "./libs/sdk/packages/base-shared/src/index.js",
+	  "typings": "./libs/sdk/packages/base-shared/src/index.d.ts",
+	  "files": [
+		"src/",
+		"libs/shared/",
+		"libs/sdk/packages/base-shared/"
+		
+	  ]
 }

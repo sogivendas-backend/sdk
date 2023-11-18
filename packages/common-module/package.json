@@ -1,6 +1,6 @@
 {
-	"name": "@sogivendas-backend/common",
-	"version": "0.0.2",
+	"name": "@sogivendas-backend/pessoas",
+	"version": "0.0.1",
 	
 	"repository": {
 		"type": "git",
@@ -10,7 +10,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"tslib": "^2.3.0"
+		"tslib": "^2.3.0",
+		"@sogivendas-backend/shared":"0.0.1"
 	},
 	"description": "A simple npm package to demonstrate GitHub Package Registry",
 	"author": "Sogitec",
@@ -22,9 +23,13 @@
 	  "publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	  },
-	  "main":  "./libs/commom/pessoas/src/lib/index.js",
-	  "typings": "./libs/commom/pessoas/src/lib/index.d.ts",
+	  "main":  "./libs/sdk/packages/common-module/src/index.js",
+	  "typings": "./libs/sdk/packages/common-module/src/index.d.ts",
+	  "type": "commonjs",
 	  "files": [
-		"libs/common/*"
+		"src/",
+		"libs/common/",
+		"libs/common/pessoas/",
+		"libs/sdk/packages/common-module/"
 	  ]
 }
