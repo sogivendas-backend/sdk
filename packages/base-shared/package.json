@@ -1,0 +1,26 @@
+{
+	"name": "@sogivendas-backend/shared",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sogivendas-backend/sdk.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"tslib": "^2.3.0"
+	},
+	"description": "A simple npm package to demonstrate GitHub Package Registry",
+	"author": "Sogitec",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sogivendas-backend/sdk/issues"
+	  },
+	  "homepage": "https://github.com/sogivendas-backend/sdk#readme",
+	  "publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	  },
+	  "main": "./libs/shared/src/lib/index.js",
+	  "typings": "./libs/shared/src/lib/index.d.ts"
+}

@@ -1,6 +1,9 @@
 {
+	"private":true,
 	"workspaces": [
-		"packages/*"
+		"packages/base-shared",
+		"packages/common-pessoas",
+		"packages/sdk"
 	],
 	"repository": {
 		"type": "git",

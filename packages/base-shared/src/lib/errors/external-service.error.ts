@@ -1,0 +1,1 @@
+export * from "../../../../../../shared/src/lib/errors/external-service.error"

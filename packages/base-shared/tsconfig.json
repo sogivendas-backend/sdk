@@ -1,14 +1,13 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "../../../../tsconfig.base.json",
+	"patch":{},
 	"compilerOptions": {
-		"baseUrl": ".",
-		"noEmit": true,
+		"noEmit": false,
 		"declaration": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-	
 		"lib": ["esnext", "dom"],
 		"module": "CommonJS",
 		"moduleResolution": "node",
@@ -21,8 +20,14 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "esnext"
-	  },
-	  "include": ["packages"],
-	  "exclude": ["node_modules"]
+		"target": "esnext",
+		"outDir": "./dist"
+	},
+
+	"exclude": ["node_modules", "**/*.spec.ts"],
+	"references": [
+		{
+			"path": "./tsconfig.lib.json"
+		}
+	]
 }

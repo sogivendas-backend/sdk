@@ -1,14 +1,13 @@
 {
-	"extends": "../../tsconfig.base.json",
+	"extends": "../../../../tsconfig.base.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"noEmit": true,
+		"rootDir": "../../../../",
+		"noEmit": false,
 		"declaration": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-	
 		"lib": ["esnext", "dom"],
 		"module": "CommonJS",
 		"moduleResolution": "node",
@@ -21,8 +20,19 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "esnext"
-	  },
-	  "include": ["packages"],
-	  "exclude": ["node_modules"]
+		"target": "esnext",
+		"outDir": "./dist",
+		"baseUrl": "../../../../",
+		"paths": {
+			"@sogivendas-backend/shared": ["libs/shared/src/lib/index.ts"],
+
+		  }
+	},
+
+	"exclude": ["node_modules", "**/*.spec.ts"],
+	"references": [
+		{
+			"path": "./tsconfig.lib.json"
+		}
+	]
 }

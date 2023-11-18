@@ -1,0 +1,27 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"strictNullChecks": false,
+		"declaration": true,
+		"composite": false
+	},
+	"files": [
+		"./src/index.ts",
+		"../../../../libs/common/pessoas/src/lib/index.ts",
+		"../../../common/pessoas/src/lib/domain/value-objects/cnpj.valueobject.ts",
+		"../../../common/pessoas/src/lib/domain/value-objects/index.ts",
+		"../../../common/pessoas/src/lib/domain/value-objects/cpf-cnpj.valueobject.ts",
+		"../../../common/pessoas/src/lib/domain/value-objects/cpf-cnpj-documento.ts",
+		"../../../common/pessoas/src/lib/domain/index.ts",
+		"../../../common/pessoas/src/lib/types/cnpj.type.ts",
+		"../../../common/pessoas/src/lib/types/index.ts",
+		"../../../common/pessoas/src/lib/domain/pessoa-tipo.ts",
+	],
+	"include": [
+		"src",
+		"libs/common/*"
+	],
+	"exclude": [
+		"jest.config.ts"
+	]
+}
